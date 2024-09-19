@@ -109,7 +109,7 @@ footer a:hover {
 /* RESUME
 ------------------------------------*/
 .resume header::before {
-    background: url(../images/bg-home-office-studio.jpg) center;
+    background: url(../images/home-erika.png) center;
     background-size: cover;
     content: "";
     display: block;
