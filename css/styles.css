@@ -84,13 +84,15 @@ footer a:hover {
 /* HOME
 ------------------------------------*/
 .home {
-    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background: url(../images/background-homepage.png) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
 }
 .home .content-wrapper {
     flex: 1 0 auto;
+    align-content: center;
+
 }
 .content-bg {
     background: rgb(255 255 255 / 0.9);
@@ -109,7 +111,7 @@ footer a:hover {
 /* RESUME
 ------------------------------------*/
 .resume header::before {
-    background: url(../images/home-erika.png) center;
+    background: url(../images/resume-banner.png) center;
     background-size: cover;
     content: "";
     display: block;
