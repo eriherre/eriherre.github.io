@@ -86,6 +86,7 @@ footer a:hover {
 .home {
     background: url(../images/background-homepage.png) no-repeat;
     background-size: cover;
+    background-attachment: fixed; 
     display: flex;
     flex-direction: column;
 }
@@ -111,7 +112,7 @@ footer a:hover {
 /* RESUME
 ------------------------------------*/
 .resume header::before {
-    background: url(../images/resume-banner.png) center;
+    background: url(../images/erika-banner-1.png) center;
     background-size: cover;
     content: "";
     display: block;
