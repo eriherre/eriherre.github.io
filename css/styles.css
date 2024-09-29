@@ -49,10 +49,10 @@ h3 {
 
 /* links */
 a {
-    color: #3c8453;
+    color: #54b7f7;
 }
 a:hover {
-    color: #bcaa96;
+    color: #050505;
     text-decoration: none;
 }
 footer a {
@@ -62,7 +62,7 @@ footer a:hover {
     color: #3c8453;
 }
 .btn {
-    background: #3c8453;
+    background: #54B7F7;
     color: #f6f6f6;
     text-decoration: none;
     text-transform: uppercase;
@@ -84,7 +84,7 @@ footer a:hover {
 /* HOME
 ------------------------------------*/
 .home {
-    background: url(../images/background-homepage.png) no-repeat;
+    background: url(../images/background-homepage\ \(1\).png) no-repeat;
     background-size: cover;
     background-attachment: fixed; 
     display: flex;
@@ -112,7 +112,7 @@ footer a:hover {
 /* RESUME
 ------------------------------------*/
 .resume header::before {
-    background: url(../images/erika-banner-1.png) center;
+    background: url(../images/blue-background-homepage.png) center;
     background-size: cover;
     content: "";
     display: block;
