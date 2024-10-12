@@ -1,0 +1,101 @@
+{% extends "base.html" %} 
+{% block title %}Projects - Erika Herrera{% endblock %}
+
+{% block content %}
+
+  <!-- //  PROJECTS  // -->
+  <section class="portfolio-section">
+    <h2>Projects</h2>
+
+    <div class="project-wrapper">
+      
+      <!-- //  Introduction to Criminal Justice  // -->
+      <section class="project-item">
+        <img
+          src="{{ url_for('static', filename='images/crju-500x365.png') }}"
+          srcset="{{ url_for('static', filename='images/crju-1000x730.png') }} 2x"
+          alt="Decoded by Erika YouTube video thumbnails"
+        />
+        <h3>Introduction to Criminal Justice - Undergraduate course</h3>
+        <p>
+          The NZQA Level 5 Certificate in Criminal Justice was the first project
+          I completed with UC Online. Collaborating with subject matter experts
+          (SMEs) and the educational media team, we delivered a programme
+          covering various topics and unique factors that shape the criminal
+          justice system. In this portfolio, I will share my experience
+          designing one of the four courses "Introduction to Criminal Justice.
+        </p>
+        <a class="btn" href="{{ url_for('project', path='introduction-to-criminal-justice') }}">More info</a>
+        <a class="btn" href="">watch a video </a>
+      </section>
+
+      <!-- //  Instructional Design Basics  // -->
+      <section class="project-item">
+        <img
+          src="{{ url_for('static', filename='images/instructional-design-blue-500x365.png') }}"
+          srcset="{{ url_for('static', filename='images/project-courses-1000px.png') }} 2x"
+          alt="List of course names and thumbnails"
+        />
+        <h3>Instructional Design Basics - Microcredential</h3>
+        <p>
+          The NZQA Level 8 micro-credential Instructional design basics was one
+          of my first completed projects with UC Online. It focused on learners
+          interested in learning fundamental instructional design frameworks and
+          models. I worked with one subject matter expert and the educational
+          media team. Communication and collaboration were vital during this
+          project's design and development.
+        </p>
+        <a class="btn" href="{{ url_for('project', path='instructional-design-basics') }}">More info</a>
+        <a class="btn" href="" >watch a video</a>
+      </section>
+
+       <!-- //  Listeria Awareness - e-learning course  // -->
+      <section class="project-item">
+        <img
+          src="{{ url_for('static', filename='images/listeria-500x365.png') }}"
+          srcset="{{ url_for('static', filename='images/project-troy-podcast-1000px.png') }} 2x"
+          alt="The TROY podcast website homepage"
+        />
+        <h3>Listeria Awareness - e-learning course</h3>
+        <p>
+          This short e-learning course was part of a training programme. It
+          focuses on the crucial topic of food safety. For the design and
+          development of this project, I worked with the senior instructional
+          designer, the training team leader and the Quality Assurance Manager
+          (SME). As a small team, constant communication and agile collaboration
+          were fundamental to delivering the project on time due to the business
+          needs.
+        </p>
+        <a class="btn" href="{{ url_for('project', path='listeria-awareness') }}">More info</a>
+        <a
+          class="btn"
+          href="projects/projet_name_listeria-e-learning.html"
+          >watch a video</a
+        >
+      </section>
+
+       <!-- //  Delinker System - VR Training co  // -->
+      <section class="project-item">
+        <img
+          src="{{ url_for('static', filename='images/delinker-500x365.png') }}"
+          srcset="{{ url_for('static', filename='images/project-the-wire-ipsum-1000px.png') }} 2x"
+          alt="The Wire Ipsum quote generator website"
+        />
+        <h3>Delinker System - VR Training course</h3>
+        <p>
+          In this Virtual Reality (VR) course project, I had the opportunity to
+          collaborate with a learning experience designer to transform an
+          e-learning module into an immersive virtual experience. This redesign
+          aimed to offer a hands-on learning experience in a safe environment.
+          Throughout the design process, I was able to integrate my expertise in
+          occupational health and safety with learning design principles.
+        </p>
+        <a class="btn" href="{{ url_for('project', path='delinker') }}">More info</a>
+        <a class="btn" href="https://thewireipsum.com"
+          >watch a video</a
+        >
+      </section>
+    </div>
+  </section>
+
+{% endblock %}

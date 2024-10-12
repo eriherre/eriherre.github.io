@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}Projects - Erika Herrera{% endblock %}
+
+{% block content %}
+
+<section class="portfolio-section">
+  <h1>Instructional Design Basics - Microcredential</h1>
+</section>
+
+<section class="portfolio-section">
+  <h2>Overview</h2>
+  <p>
+    In July 2022, the Senior Instructional Designer and I were tasked with
+    developing three micro-credentials (MCs) in the Learning Design series,
+    collaborating closely with three Subject Matter Experts (SMEs). To optimise
+    workflow, we divided responsibilities based on each SME's expertise and
+    availability. I took the lead the development of the first micro-credential
+    in the series.
+  </p>
+</section>
+
+<section class="portfolio-section">
+  <h2>Design Process</h2>
+  <div class="project-wrapper">
+    <section class="project-item">
+      <img
+        src="{{ url_for('static', filename='/images/project-troy-podcast-500px.png') }}"
+        srcset="{{ url_for('static', filename='images/project-decoded-youtube-1000px.png')}} 2x"
+        alt="Decoded by Erika YouTube video thumbnails"
+      />
+      <h3>Analysis</h3>
+      <p>
+        During the analysis phase, we define goals, learning outcomes, and
+        assessment for each MC to ensure a clear and consistent learning
+        pathway. In the learner analysis, we identified that our target audience
+        included teachers looking to transition into instructional design, as
+        well as learning and development professionals seeking to focus on
+        course design rather than technology. With this in mind, the course's
+        primary goal was to equip learners with the skills needed to design
+        instructional materials by guiding them through the basics of
+        instructional design.
+      </p>
+    </section>
+
+    <section class="project-item">
+      <img
+        src="{{ url_for('static', filename='/images/project-courses-500px.png') }}"
+        srcset="{{ url_for('static', filename='images/project-courses-1000px.png') }} 2x"
+        alt="List of course names and thumbnails"
+      />
+      <h3>Design and Development</h3>
+      <p>
+        During the design phase, I conducted two workshops with the SME,
+        focusing on aligning learning outcomes, assessments, and content. I
+        designed a style guide to ensure consistency across MCs. Once identified
+        the required media components (videos and animations), I created
+        storyboards and scripts for the Educational Media Production (EMP) team.
+      </p>
+      <p>
+        I used Rise360 to develop the course content and Storyline360 and Adobe
+        Illustrator to create images and interactive graphics. The Learning
+        Management System (LMS) used was Totara (Moodle version 3.5).
+      </p>
+    </section>
+
+    <section class="project-item">
+      <img
+        src="{{ url_for('static', filename='/images/project-troy-podcast-500px.png') }}"
+        srcset="{{ url_for('static', filename='images/project-troy-podcast-1000px.png') }} 2x"
+        alt="The TROY podcast website homepage"
+      />
+      <h3>Course Features and Highlights</h3>
+      <p>
+        The course included interactive animations, videos, and graphics, all
+        designed with a consistent style guide to ensure a cohesive experience.
+        A Flipgrid board was introduced to encourage interaction and foster a
+        sense of community by allowing learners to record introductory videos.
+        This was particularly valuable during two peer review workshops, where
+        participants shared their instructional strategies and prototypes with
+        peers to receive feedback. Knowing who would review their work made
+        learners feel more comfortable and confident in sharing their ideas.
+      </p>
+    </section>
+
+    <section class="project-item">
+      <img
+        src="{{ url_for('static', filename='/images/project-the-wire-ipsum-500px.png') }}"
+        srcset="{{ url_for('static', filename='images/project-the-wire-ipsum-1000px.png') }} 2x"
+        alt="The Wire Ipsum quote generator website"
+      />
+      <h3>Challenges</h3>
+      <p>
+        One of the main challenges was the tight 16-week deadline for developing
+        the three micro-credentials. Coordinating the team’s efforts and
+        aligning with the SMEs’ availability required strategic planning and
+        effective time management. Additionally, maintaining consistency across
+        the three MCs involved close collaboration and adherence to the style
+        guide created.
+      </p>
+    </section>
+
+    <section class="project-item">
+      <img
+        src="{{ url_for('static', filename='/images/project-the-wire-ipsum-500px.png') }}"
+        srcset="{{ url_for('static', filename='images/project-the-wire-ipsum-1000px.png') }} 2x"
+        alt="The Wire Ipsum quote generator website"
+      />
+      <h3>Feedback and Outcomes</h3>
+      <p>
+        The evaluation process included reviews by SMEs and a small-group
+        evaluation with beta testers, using a comprehensive checklist to assess
+        the course's effectiveness. Since the course was successfully launched
+        in October 2022, the feedback has been positive, with learners
+        expressing satisfaction that is reflected in a Net Promoter Score (NPS)
+        of 8.06 out of 10.
+      </p>
+    </section>
+  </div>
+</section>
+
+{% endblock %}
