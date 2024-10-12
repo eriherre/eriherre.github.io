@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from flask_frozen import Freezer
-import sys
+import sys, os
 
 app = Flask(__name__)
 freezer = Freezer(app)
@@ -52,6 +52,11 @@ if __name__ == '__main__':
         freezer = Freezer(app)
 
         freezer.freeze()
+        
+        # Create CNAME file
+        cname_file_path = os.path.join(output_dir, 'CNAME')
+        with open(cname_file_path, 'w') as cname_file:
+            cname_file.write('eriherrera.com')
 
     else:
         # Run the Flask app for development
