@@ -1,9 +1,27 @@
 <!-- Navigation Bar -->
-<nav>
-    <ul>
-    <li><a href="{{ url_for('index') }}">Home</a></li>
-    <li><a href="{{ url_for('projects') }}">Projects</a></li>
-    <li><a href="{{ url_for('experience') }}">Experience</a></li>
-    <li><a href="{{ url_for('contact') }}">Contact</a></li>
-    </ul>
+<nav class="navbar navbar-expand-sm sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler custom-toggler d-block d-sm-none d-flex" type="button" data-bs-toggle="collapse"
+      data-bs-target="#mynavbar">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <span class="custom-toggler-text text-uppercase">Menu</span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+      <ul class="navbar-list navbar-nav mb-lg-0">
+        <li class="nav-item">
+          <a id="menu-index" class="text-uppercase" aria-current="page" href="{{ url_for('index') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="menu-projects" class="text-uppercase" aria-current="page" href="{{ url_for('projects') }}">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a id="menu-experience" class="text-uppercase" aria-current="page" href="{{ url_for('experience') }}">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a id="menu-contact" class="text-uppercase" aria-current="page" href="{{ url_for('contact') }}">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
+
