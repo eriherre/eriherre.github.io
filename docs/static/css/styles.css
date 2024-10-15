@@ -10,193 +10,208 @@ Off-white     #f6f6f6
 
 /* GLOBAL STYLES 
 ------------------------------------*/
+
+:root {
+  --font1: "Caveat", cursive;
+  --font2: "Poppins", sans-serif;
+  --font3: "Montserrat", sans-serif;
+  --font4: "Roboto", sans-serif;
+  --font5: "Open Sans", sans-serif;
+  --font6: "Playfair Display", serif;
+  --font7: "Abril Fatface", serif;
+  --font8: "Merriweather", serif;
+  --font9: "Oswald", sans-serif;
+  --font10: "Raleway", sans-serif;
+
+
+}
+
 /* 
   https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 */
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* set default to 10px */
+  box-sizing: border-box;
+  font-size: 62.5%; /* set default to 10px */
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 body {
-    background: #f6f6f6; 
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.4;
+  background: #f6f6f6;
+  margin: 0;
+  font-family: var(--font2);
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
-h1, h2, h3 {
-    font-family: 'Caveat', cursive;
-    font-weight: 400;
-    margin: 0;
+h1,
+h2,
+h3 {
+  font-family: var(--font9);
+  font-weight: 400;
+  margin: 0;
 }
 h1 {
-    font-size: 7rem;
-    line-height: 0.85;
+  font-size: 7rem;
+  line-height: 0.85;
 }
 h2 {
-    font-size: 3.6rem;
+  font-size: 3.6rem;
 }
 h3 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 /* links */
 a {
-    color: #54b7f7;
+  color: #54b7f7;
 }
 a:hover {
-    color: #050505;
-    text-decoration: none;
+  color: #050505;
+  text-decoration: none;
 }
 footer a {
-    color: #bcaa96;
+  color: #bcaa96;
 }
 footer a:hover {
-    color: #3c8453;
+  color: #3c8453;
 }
 .btn {
-    background: #54B7F7;
-    color: #f6f6f6;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    display: inline-block;
-    padding: 7px;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    border-radius: 4px;
+  background: #54b7f7;
+  color: #f6f6f6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 7px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  border-radius: 4px;
 }
 
 .download-link {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    font-size: 1.5rem;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
 }
-@media screen and (max-width: 1200px){
-    .download-link {
-        position: absolute;
-    }
+@media screen and (max-width: 1200px) {
+  .download-link {
+    position: absolute;
+  }
 }
-
 
 .content-wrapper {
-    margin: 0 auto;
-    padding: 30px;
-    max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 900px;
 }
-
 
 /* Portfolio
 ------------------------------------*/
 .portfolio header::before {
-    background: url(../images/blue-background-homepage.png) center;
-    background-size: cover;
-    content: "";
-    display: block;
-    height: 550px;
+  background: url(../images/blue-background-homepage.png) center;
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 550px;
 }
 
 .portfolio-section {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 .portfolio-section h2 {
-    border-bottom: 2px dashed #d3d4d6;
+  border-bottom: 2px dashed #d3d4d6;
 }
-@media screen and (max-width: 500px){
-    .portfolio header::before {
-        height: 200px;
-    }
-    h1 {
-        font-size: 5rem;
-    }
-    h2 {
-        font-size: 2.6rem;
-    }
+@media screen and (max-width: 500px) {
+  .portfolio header::before {
+    height: 200px;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
 }
-
 
 /* Projects
 ------------------------------------*/
 .project-item {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 .project-item img {
-    width: 300px;
+  width: 300px;
 }
-@media screen and (min-width:860px) {
-    .project-item {
-        display: flow-root;
-    }
-    .project-item img {
-        float: left;
-        margin-right: 20px;
-    }
+@media screen and (min-width: 860px) {
+  .project-item {
+    display: flow-root;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
 }
-@media screen and (min-width:650px) and (max-width:859px) {
-    .project-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-    }
-    .project-item img {
-        width: 100%;
-    }
+@media screen and (min-width: 650px) and (max-width: 859px) {
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  .project-item img {
+    width: 100%;
+  }
 }
-@media screen and (max-width:500px){
-    .project-item img {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+@media screen and (max-width: 500px) {
+  .project-item img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
-
 
 /* Work Experience
 ------------------------------------*/
 .work-item {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 .work-details p {
-    margin: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 860px) {
-    .work-item {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        column-gap: 20px;
-    }
-    .work-summary p:first-child {
-        margin-top: 0;
-    }
+  .work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+  }
+  .work-summary p:first-child {
+    margin-top: 0;
+  }
 }
-
 
 /* Education
 ------------------------------------*/
 .education-item {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 .education-item p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Certifications
 ------------------------------------*/
 .certification-item {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 .certification-item p {
-    margin: 0;
+  margin: 0;
 }
-
 
 /* Navbar
 ------------------------------------*/
@@ -214,7 +229,7 @@ footer a:hover {
 
 .navbar-list li a {
   font-weight: bold;
-  font-family: 'Caveat', cursive;
+  font-family: var(--font2);
 }
 
 .navbar a {
@@ -233,7 +248,7 @@ footer a:hover {
 .custom-toggler-text {
   padding: 5px;
   font-weight: bold;
-  font-family: 'Caveat', cursive;
+  font-family: var(--font2);
 }
 
 .custom-toggler.navbar-toggler {
@@ -283,39 +298,38 @@ footer a:hover {
   color: #ff3b88;
 }
 
-
 /* Footer
 ------------------------------------*/
 footer {
-    background: #222;
-    color: #d3d4d6;
+  background: #222;
+  color: #d3d4d6;
 }
 .socials {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 .socials li {
-    display: inline-block;
-    margin-left: 10px;
+  display: inline-block;
+  margin-left: 10px;
 }
 .socials img {
-    width: 32px;
+  width: 32px;
 }
 .socials img:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
-@media screen and (min-width: 860px){
-    footer {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-        align-items: center;
-    }
+@media screen and (min-width: 860px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+  }
 }
-@media screen and (max-width: 859px){
-    footer {
-        text-align: center;
-        padding: 10px;
-    }
+@media screen and (max-width: 859px) {
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
 }
