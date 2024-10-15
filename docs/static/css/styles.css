@@ -20,10 +20,13 @@ Off-white     #f6f6f6
   --font6: "Playfair Display", serif;
   --font7: "Abril Fatface", serif;
   --font8: "Merriweather", serif;
+<<<<<<< HEAD
   --font9: "Oswald", sans-serif;
   --font10: "Raleway", sans-serif;
 
 
+=======
+>>>>>>> 23cecb45eca3643e0539e4086879d42cc7ef7f7c
 }
 
 /* 
@@ -53,7 +56,11 @@ body {
 h1,
 h2,
 h3 {
+<<<<<<< HEAD
   font-family: var(--font9);
+=======
+  font-family: var(--font6);
+>>>>>>> 23cecb45eca3643e0539e4086879d42cc7ef7f7c
   font-weight: 400;
   margin: 0;
 }
