@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 import sys, os
 
 load_dotenv()
-print(f"FLASK_DEBUG: {os.getenv('FLASK_DEBUG')}")
-
+# print(f"FLASK_DEBUG: {os.getenv('FLASK_DEBUG')}")
 
 app = Flask(__name__)
 freezer = Freezer(app)
