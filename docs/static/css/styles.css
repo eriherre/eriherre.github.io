@@ -83,31 +83,43 @@ footer a:hover {
 }
 .btn {
   background: var(--color1);
-  color: var(--color5);
+  color: var(--color6);
+  font-family: var(--font9);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: inline-block;
   padding: 7px;
   letter-spacing: 0.1em;
   line-height: 1;
   border-radius: 4px;
+  border: solid 2px black;
 }
 
 .btn:hover {
-  background-color: var(--color2);
+  background-color: var(--color1);
+  border: solid 2px black;
+  color: var(--color5);
+}
+
+.btn.download-link {
+  border-radius: 4px 4px 0 0;
+  border-top: solid 2px var(--color6);
+  border-left: solid 2px var(--color6);
+  border-right: solid 2px var(--color6);
+  border-bottom: none;
+}
+
+#main-header {
+  position: relative;
 }
 
 .download-link {
-  position: fixed;
-  top: 5px;
-  left: 5px;
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 1200px) {
-  .download-link {
-    position: absolute;
-  }
+  position: absolute;
+  bottom: 0px; 
+  right:20px; 
+  font-size: 1.6rem;
+  z-index: 1000;
 }
 
 .content-wrapper {
@@ -119,7 +131,7 @@ footer a:hover {
 /* Portfolio
 ------------------------------------*/
 .portfolio header::before {
-  background: url(../images/bg-home-office-studio.jpg) center;
+  background: url(../images/banner.jpg) center;
   background-size: cover;
   content: "";
   display: block;
@@ -132,6 +144,7 @@ footer a:hover {
 .portfolio-section h2 {
   border-bottom: 2px dashed var(--color1);
   margin-bottom: 30px;
+  padding-bottom: 5px;
 }
 .rounded-image {
   display: flex;

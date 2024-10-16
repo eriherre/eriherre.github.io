@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
 
-
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='images/favicon.ico') }}"
+    />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,17 +59,29 @@
     />
 
     <!-- Merriweather-->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Oswald-->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Raleway-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome-->
-    <script src="https://kit.fontawesome.com/066faba3d5.js" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/066faba3d5.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- JavaScript -->
     <script
       type="text/javascript"
@@ -88,17 +103,17 @@
   </head>
 
   <body class="portfolio">
-    <a
-      class="btn download-link"
-      href="{{ url_for('static', filename='pdf/Erika_Herrera_Resume.pdf')}}"
-      download
-      >Download Resume</a
-    >
-
     {% include 'navbar.html'%}
 
     <!-- Header -->
-    <header></header>
+    <header id="main-header">
+      <a
+        class="btn download-link fs-3"
+        href="{{ url_for('static', filename='pdf/Erika_Herrera_Resume.pdf')}}"
+        download
+        >Get Resume
+      </a>
+    </header>
 
     <!-- Main Content -->
     <div class="content-wrapper">
