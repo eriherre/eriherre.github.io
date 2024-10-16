@@ -1,6 +1,11 @@
 from flask import Flask, render_template
 from flask_frozen import Freezer
+from dotenv import load_dotenv
 import sys, os
+
+load_dotenv()
+print(f"FLASK_DEBUG: {os.getenv('FLASK_DEBUG')}")
+
 
 app = Flask(__name__)
 freezer = Freezer(app)
@@ -60,4 +65,5 @@ if __name__ == '__main__':
 
     else:
         # Run the Flask app for development
-        app.run(debug=True)
+        debug_mode = os.getenv('FLASK_DEBUG', 'false').lower() == 'true'
+        app.run(host='0.0.0.0', port=8000, debug=debug_mode, use_reloader=debug_mode)
