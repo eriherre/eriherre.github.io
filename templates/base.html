@@ -103,24 +103,26 @@
   </head>
 
   <body class="portfolio">
-    {% include 'navbar.html'%}
+    <div class="page-container">
+      {% include 'navbar.html'%}
 
-    <!-- Header -->
-    <header id="main-header">
-      <a
-        class="btn download-link fs-3"
-        href="{{ url_for('static', filename='pdf/Erika_Herrera_Resume.pdf')}}"
-        download
-        >Get Resume
-      </a>
-    </header>
+      <!-- Header -->
+      <header id="main-header">
+        <a
+          class="btn download-link fs-3"
+          href="{{ url_for('static', filename='pdf/Erika_Herrera_Resume.pdf')}}"
+          download
+          >Get Resume
+        </a>
+      </header>
 
-    <!-- Main Content -->
-    <div class="content-wrapper">
-      <main>{% block content %}{% endblock %}</main>
+      <!-- Main Content -->
+      <div class="content-wrapper">
+        <main>{% block content %}{% endblock %}</main>
+      </div>
+
+      <!-- Footer -->
+      {% include 'footer.html' %}
     </div>
-
-    <!-- Footer -->
-    {% include 'footer.html' %}
   </body>
 </html>

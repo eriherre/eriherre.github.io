@@ -14,11 +14,10 @@
   --font9: "Oswald", sans-serif;
   --font10: "Raleway", sans-serif;
 
-
   /* COLOR PALETTE */
 
-  --color1: #54b7f7;
-  --color2: #93cef5;
+  --color1: #33abfb;
+  --color2: #82ccfd;
   --color3: #040309;
   --color5: #f6f6f6;
   --color6: #222;
@@ -30,6 +29,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* set default to 10px */
+  min-width: 320px;
 }
 *,
 *:before,
@@ -45,7 +45,7 @@ body {
   background: var(--color5);
   margin: 0;
   font-family: var(--font2);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 h1,
@@ -116,8 +116,8 @@ footer a:hover {
 
 .download-link {
   position: absolute;
-  bottom: 0px; 
-  right:20px; 
+  bottom: 0px;
+  right: 20px;
   font-size: 1.6rem;
   z-index: 1000;
 }
@@ -125,7 +125,7 @@ footer a:hover {
 .content-wrapper {
   margin: 0 auto;
   padding: 30px;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 /* Portfolio
@@ -176,10 +176,10 @@ footer a:hover {
   margin: 30px 0;
 }
 .project-item img {
-  width: 350px;
+  width: 400px;
 }
-.project-item p {
-  margin-top: 10px;
+.project-item h3 {
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 860px) {
   .project-item {
@@ -213,6 +213,9 @@ footer a:hover {
 .work-item {
   margin: 30px 0;
 }
+.work-item h3 {
+  margin-bottom: 10px;
+}
 .work-details p {
   margin: 0;
 }
@@ -233,6 +236,10 @@ footer a:hover {
 .education-item {
   margin: 30px 0;
 }
+
+.education-item h3 {
+  margin-bottom: 10px;
+}
 .education-item p {
   margin: 0;
 }
@@ -242,6 +249,9 @@ footer a:hover {
 .certification-item {
   margin: 30px 0;
 }
+.certification-item h3 {
+  margin-bottom: 10px;
+}
 .certification-item p {
   margin: 0;
 }
@@ -250,6 +260,9 @@ footer a:hover {
 ------------------------------------*/
 .skill-item {
   margin: 30px 0;
+}
+.skill-item h3 {
+  margin-bottom: 10px;
 }
 .skill-item p {
   margin: 0;
@@ -353,11 +366,11 @@ footer a:hover {
 ------------------------------------*/
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: var(--color1);
-    border-radius: 20%;
-    width: 70px; 
-    height: 70px; 
-    background-size: 50px 50px; 
+  background-color: var(--color1);
+  border-radius: 20%;
+  width: 70px;
+  height: 70px;
+  background-size: 50px 50px;
 }
 
 .carousel-item {
@@ -398,19 +411,38 @@ footer a:hover {
 .carousel-caption p {
   font-style: italic;
   border-radius: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   background-color: rgba(84, 183, 247, 0.8);
   padding: 0.5rem; /* Add padding for better readability */
-} 
+}
 
-/******************************/
-/*         YOUTUBE VIDEO      */
-/******************************/
+/* Contact
+------------------------------------*/
+
+.contact-container{
+  padding-bottom: 150px; /* This is provisory, needs re-work */
+}
+.contact-item {
+  margin: 30px 0;
+}
+.contact-item h3 {
+  margin-bottom: 10px;
+}
+.contact-item p {
+  margin: 0;
+}
+
+.contact-item .socials {
+  justify-content: flex-start;
+}
+
+/* Youtube Video
+------------------------------------*/
 
 .video-border {
-    border: solid 5px var(--color1);
-    border-radius: 10px;
-    overflow: hidden; 
+  border: solid 5px var(--color1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Footer
@@ -425,11 +457,13 @@ footer {
 .socials {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .socials li {
   display: inline-block;
-  margin-left: 10px;
 }
 
 .socials i {
