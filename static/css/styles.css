@@ -56,7 +56,7 @@ h3 {
   margin: 0;
 }
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   line-height: 0.85;
 }
 h2 {
@@ -113,23 +113,6 @@ footer a:hover {
 #main-header {
   position: relative;
 }
-
-/* @keyframes colorChange {
-  0%, 49% { color: var(--color6); }
-  80% { color: var(--color5); }
-  100% { color: var(--color6); }
-}
-
-.download-link {
-  position: absolute;
-  bottom: 0px;
-  right: 20px;
-  font-size: 1.6rem;
-  z-index: 1000;
-  animation: colorChange 10s infinite;
-  transition: color 0.5s ease-in-out;
-} */
-
 
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
